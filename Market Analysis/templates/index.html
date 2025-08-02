@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+</head>
+<style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 75px;
+    background: url("https://i.pinimg.com/originals/e2/45/a5/e245a537e6233bd587ab6f90b7a8eff7.png");
+    /* background: url(""); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: rgb(218, 208, 208);
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+
+.container {
+    z-index: 2;
+    text-align: center;
+    color: white;
+    /* display: flex; */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+.custom-select {
+    width: 750px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e2d34;
+    color: #7a6969;
+    cursor: pointer;
+}
+
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(135deg, #ff9a9e, #fad0c4, #715f59, #ff9a9e); */
+    
+    /* background-size: 400% 400%; */
+    /* animation: gradientAnimation 10s ease infinite; */
+    z-index: -1;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            margin: 25px 325px;
+            border-radius: 8px;
+            background-color: #272142;
+            
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+
+        button:hover {
+            background-color: #ff3b3b;
+            
+        }
+
+        
+        
+        </style>
+<body>
+    Welcome to Stock Prediction
+    <form action="/goo" method="post">
+        <div class="container">
+        
+        <!-- <img src="bull.jpg" class="Photo"> -->
+        <select name="query" id="" class="custom-select">
+            <option value="AAPL">Apple</option>
+            <option value="MSFT">Microsoft</option>
+            <option value="TCS.NS">TCS</option>
+            <!-- <option value="TSLA">Tesla</option> -->
+            <option value="SBUX">Star Bucks</option>
+            <option value="NVDA">Nvidia</option>
+            <option value="TATAMOTORS.NS">Tata Moters</option>
+            <!-- <option value="IRCTC.BO">IRCTC</option> -->
+            <option value="TCS.NS">NHPC</option>
+           
+        </select>
+    </div>
+        <button type="submit">Submit</button>
+        <div class="background-animation" ></div>
+    </form>
+    
+</body>
+</html>
